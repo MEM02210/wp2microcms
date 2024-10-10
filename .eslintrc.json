@@ -1,0 +1,25 @@
+{
+	"env": {
+		"browser": true,
+		"es2022": true,
+		"node": true
+	},
+	"extends": ["eslint:recommended", "plugin:astro/recommended", "prettier"],
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"parser": "",
+	"rules": {
+		"prefer-const": 2, // 再代入がない限り const を強制
+		"no-console": "off", // console.log();OK
+		"no-var": 2, // var禁止
+		"no-unused-vars": "off", // 使っていない変数あってもOK
+		"computed-property-spacing": 2, // 配列のindexには空白入れない
+		"import/no-absolute-path": 0 // 絶対パスでのimportを許可,
+	},
+	"globals": {
+		"astroHTML": true
+	},
+	"plugins": [""]
+}
